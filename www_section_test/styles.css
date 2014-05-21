@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+background-color: grey;
+    width: 100%;
+}
+
+ .container {
+    /* background-color: rgba(0,0,0,.2); */
+    display: block;
+    margin: 0 auto;
+    min-height: 1000px;
+    padding: 10px;
+    width: 90%;    
+}
+
+.container h1 {
+    background-color: rgba(0,0,0,.2);
+    /* border-top: 10px solid orange; */
+    color: #fff;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 10vw;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-align: center;    
+}
+
+/*  .container:before {
+    content: '';
+    background-color: orange;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    display: block;
+ }
+ */
+/* .two .container:before {
+    top: 100%;
+    background-color: red;
+}
+ */
+/* .container:after {
+    content: '';
+    background-color: green;    
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+    width: 50%;
+    z-index: -1;
+    height: 100%;
+    display: block;
+} */
+
+@media only screen and (max-width:480px) {
+    .container:before {
+        width: 100%;
+        transition: height .35s 0s ease;
+    }
+    
+    .container:after {
+        display: none;
+    }
+} 
+
+/*
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #dadada;
+}
+.column {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px #c0c0c0;
+}*/
